@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200;300;400;500;600;700&family=Mohave&family=Playfair+Display:wght@400;500;700&family=Quicksand:wght@300;400;500&family=Rubik:wght@300;400&family=Young+Serif&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mestre Flou Soluções Digitais</title>
   </head>
@@ -12,11 +15,16 @@
       <div class="hero-background">
       </div>
         <div class="hero-content">
-            <h1>O Melhor do Digital</h1>
-            <p>Feito sob medida para você, do seu jeito</p>
+            <h1>
+              <span id="header-text" class="shadow-text">O Melhor do Digital</span><span id="header-text-bar" class="blinker bar">|</span>
+            </h1>
+            <p id="header-subtitle">
+              <span id="subtitle-text-01">Feito sob medida para você</span><span id="subtitle-text-01-bar" class="blinker bar">|</span>
+              <span id="subtitle-text-02">, do seu jeito</span><span id="subtitle-text-02-bar" class="blinker bar">|</span>
+            </p>
         </div>
     </header>
-    <section class="services">
+    <section class="services" onshow="console.log('scroll')">
       <ul>
         <li>Logomarca</li>
         <li>Arte Para Redes Sociais</li>

@@ -1,8 +1,24 @@
+/*
+@       -- AVAILABLE FONTS -- 
+
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Mohave', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Young Serif', serif; 
+*/
+
+
+
+
 * {
   box-sizing: border-box;
 }
 body {
   background-color: #42414C;
+  /* background-color: #fff; */
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -12,18 +28,63 @@ body {
 }
 
 .hero {
-  max-height: 75vw;
+  animation: hero-comes 1s ease-out;
   width: 100%;
   background-image: url("./public/logos-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position-y: top;
-  background-position-x: right;
+  background-position-x: center;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: 100%;
   color: #fff;
   text-align: center;
   padding: 100px 0;
   z-index: -5;
+}
+h1 {
+  font-family: 'Mohave';
+  font-weight: 500;
+}
+p {
+  font-family: 'Playfair Display', serif;
+}
+
+@keyframes hero-comes {
+  from{padding-bottom: 500px;}
+}
+
+
+#header-subtitle {font-size: 0pt;}
+#header-subtitle span {
+  font-size: 14pt;
+  margin-left: -1pt;
+}
+
+
+
+.bar {
+  padding: 0;
+  font-size: 24pt;
+  margin-left: -5pt;
+  font-family: monospace;
+  font-weight: 100;
+  opacity: .0;
+}
+
+.blinker {
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  to{ opacity: .0; }
+}
+
+
+
+section {
+  animation: section-comes 2s ease-out;
+}
+@keyframes section-comes {
+  from{padding-top: 500px;}
 }
 p {
   font-size: 15pt;
@@ -34,11 +95,17 @@ p {
     background-image: url("./public/logos-background-tablet.jpg");
   }
   h1 {
-    font-size: 35pt;
+    font-size: 45pt;
   }
-  p {
-    font-size: 15pt;
+  .bar {
+    font-size: 33pt;
+    margin-left: -8pt;
   }
+  #header-subtitle span {
+    font-size: 16pt;
+    margin-left: -1pt;
+  }
+  
 }
 
 @media only screen and (min-width: 950px ) {
@@ -46,9 +113,25 @@ p {
     background-image: url("./public/logos-background-desk.jpg");
   }
   h1 {
-    font-size: 40pt;
+    font-size: 52pt;
   }
-  p {
+  .bar {
+    font-size: 38pt;
+    margin-left: -10pt;
+  }
+  #header-subtitle span {
     font-size: 18pt;
+    margin-left: -1pt;
   }
+}
+
+.shadow-text {
+  color: #fff;
+  text-shadow: 2px 2px 10px #000000aa
+  /* 2px 2px 60px #de4b11d5,
+  2px 2px 160px #d3a239ce,
+  2px 2px 200px #ffd06a94,
+  2px 2px 6px #dc5314d0,
+  2px 2px 30px #b682137a; */
+
 }
