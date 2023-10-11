@@ -12,8 +12,9 @@ body {
 }
 
 .hero {
+  max-height: 75vw;
   width: 100%;
-  background-image: url("logos-background.jpg");
+  background-image: url("./public/logos-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position-y: top;
   background-position-x: right;
@@ -25,29 +26,29 @@ body {
   z-index: -5;
 }
 p {
-  font-size: 14pt;
+  font-size: 15pt;
 }
 
 @media only screen and (min-width: 650px ) {
   .hero {
-    background-image: url("logos-background-tablet.jpg");
+    background-image: url("./public/logos-background-tablet.jpg");
   }
   h1 {
     font-size: 35pt;
   }
   p {
-    font-size: 14pt;
+    font-size: 15pt;
   }
 }
 
 @media only screen and (min-width: 950px ) {
   .hero {
-    background-image: url("logos-background-desk.jpg");
+    background-image: url("./public/logos-background-desk.jpg");
   }
   h1 {
     font-size: 40pt;
   }
   p {
-    font-size: 15pt;
+    font-size: 18pt;
   }
 }
