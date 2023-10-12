@@ -57,7 +57,7 @@ p {
 #header-subtitle {font-size: 0pt;}
 #header-subtitle span {
   font-size: 14pt;
-  margin-left: -1pt;
+  margin-left: -3pt;
 }
 
 
@@ -103,7 +103,7 @@ p {
   }
   #header-subtitle span {
     font-size: 16pt;
-    margin-left: -1pt;
+    margin-left: -4pt;
   }
   
 }
@@ -121,7 +121,7 @@ p {
   }
   #header-subtitle span {
     font-size: 18pt;
-    margin-left: -1pt;
+    margin-left: -5pt;
   }
 }
 

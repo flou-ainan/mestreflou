@@ -77,4 +77,4 @@ function typeWrite(elementsIds){
    counter = setTimeout(() => typeNow(elementsIds), startDelay)
 }
 
-typeWrite(['header-text', 'subtitle-text-01', 'subtitle-text-02'])
+typeWrite(['header-text', 'subtitle-text-01', 'subtitle-text-02no'])
