@@ -17,6 +17,8 @@ font-family: 'Young Serif', serif;
   box-sizing: border-box;
 }
 body {
+  color: #fff;
+  font-family: "Quicksand";
   background-color: #42414C;
   /* background-color: #fff; */
   margin: 0;
@@ -25,13 +27,15 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-size: larger;
 }
 
 .hero {
-  animation: hero-comes 1s ease-out;
+  animation: hero-comes 1.2s ease-out;
   width: 100%;
   background-image: url("./public/logos-background-mobile.jpg");
   background-repeat: no-repeat;
+  background-color: black;
   background-position-y: top;
   background-position-x: center;
   background-attachment: fixed;
@@ -40,6 +44,16 @@ body {
   text-align: center;
   padding: 100px 0;
   z-index: -5;
+}
+section {
+  padding-top: 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
 }
 h1 {
   font-family: 'Mohave';
@@ -57,7 +71,7 @@ p {
 #header-subtitle {font-size: 0pt;}
 #header-subtitle span {
   font-size: 14pt;
-  margin-left: -3pt;
+  margin-left: -2px;
 }
 
 
@@ -103,12 +117,12 @@ p {
   }
   #header-subtitle span {
     font-size: 16pt;
-    margin-left: -4pt;
+    margin-left: -3px;
   }
   
 }
 
-@media only screen and (min-width: 950px ) {
+@media only screen and (min-width: 1200px ) {
   .hero {
     background-image: url("./public/logos-background-desk.jpg");
   }
@@ -121,7 +135,7 @@ p {
   }
   #header-subtitle span {
     font-size: 18pt;
-    margin-left: -5pt;
+    margin-left: -3px;
   }
 }
 

@@ -11,9 +11,9 @@ function typeWrite(elementsIds){
    let i = 0;
    let counter;
    let contentsArray = []
-   let startDelay = 1700 // starting type delay in milliseconds
+   let startDelay = 1000 // starting type delay in milliseconds
    const typingSpeed = 60 // interval between types in milliseconds
-   const wordDelay = 900 // waiting time between words in milliseconds
+   const wordDelay = 750 // waiting time between words in milliseconds
    const deletingSpeed = 14 // interval between backspaces in milliseconds
   
    contentsArray = elementsIds.map((elementID) => {
@@ -77,4 +77,4 @@ function typeWrite(elementsIds){
    counter = setTimeout(() => typeNow(elementsIds), startDelay)
 }
 
-typeWrite(['header-text', 'subtitle-text-01', 'subtitle-text-02no'])
+typeWrite(['header-text', 'subtitle-text-01', 'subtitle-text-02'])
